@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  font-family: 'Bebas Neue', cursive;
+  background: #141E30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#243B55), to(#141E30));
+  background: linear-gradient(to top, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.header h2 {
+  font-size: 2rem;
+  background: #34e89e;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#0f3443), to(#34e89e));
+  background: linear-gradient(to top, #0f3443, #34e89e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.input-area {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-area .input-area_textholder {
+  width: 100%;
+  text-align: center;
+}
+
+.input-area .input-area_textholder label {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.input-area .input-area_textholder textarea {
+  width: 80%;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.input-area .div-btn {
+  margin-top: 1rem;
+}
+
+.input-area .div-btn button {
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  background: #141E30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#243B55), to(#141E30));
+  background: linear-gradient(to top, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-area .div-btn button:hover {
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+}
+
+.output-area .output-area__background {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 10000;
+}
+
+.output-area .output-area__background.active {
+  display: block;
+}
+
+.output-area .output-area__box {
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  position: relative;
+  min-height: 200px;
+  margin-top: 5rem;
+}
+
+.output-area .output-area__box .popupCloseButton {
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 25px;
+  line-height: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.output-area .output-area__box .output-area__text > p {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.rendering-area {
+  margin-top: 2rem;
+}
+
+.rendering-area .rendering-area__structure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 1rem;
+  padding: 1.5rem;
+}
+
+.rendering-area .rendering-area__display-card {
+  background: snow;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  text-align: left;
+}
+
+.rendering-area .rendering-area__display-card h2 {
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.rendering-area .rendering-area__display-card p {
+  padding-bottom: 3rem;
+}
+
+.rendering-area .rendering-area__display-card button {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.5rem;
+  text-transform: capitalize;
+  float: right;
+  font-size: 0.85rem;
+  background: #141E30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#243B55), to(#141E30));
+  background: linear-gradient(to top, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.rendering-area .rendering-area__display-card button:hover {
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+}
+/*# sourceMappingURL=main.css.map */
